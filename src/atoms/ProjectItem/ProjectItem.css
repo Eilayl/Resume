@@ -1,0 +1,61 @@
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.project-image:hover .overlay {
+  opacity: 0.6;
+}
+
+.project-description {
+  margin-top: 1rem;
+  font-size: 16px;
+  text-decoration: underline;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+  .project-description {
+    display: none; /* לא יראו את התיאור בטלפון */
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+}

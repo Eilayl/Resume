@@ -1,0 +1,85 @@
+.skills-container {
+  padding: 2rem;
+  text-align: center;
+  border-top:1px solid white;
+  transition: all 0.3s ease;
+}
+
+.skills-container.dark span, .skills-container.dark h3 {
+  color: black;
+}
+
+.skills-container.light span, .skills-container.light h3{
+  color: white;
+}
+
+
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.skill-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.progress {
+  height: 4px;
+  width: 100%;
+  background: white;
+  border:1px solid black;
+  margin-bottom: 0.6rem;
+}
+
+.languages-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.lang-item {
+  font-size: 0.9rem;
+}
+
+
+@media screen and (max-width:1000px){
+    .skills-grid{
+          grid-template-columns: 1fr;
+    }
+}

@@ -4,9 +4,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.6s ease, color 0.6s ease;
+    transition: background-color 0.3s ease, color 0.4s ease;
     flex-direction: row;
+    position: fixed;
+    top:0;
     justify-content: space-around;
+    opacity:0.98;
+    z-index: 10000;
     }
 
     .header-container.light {
@@ -42,10 +46,9 @@
     color: #555;
     }
 
-    .span-and-icon {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
+    .span-and-icon a{
+      display:flex;
+      align-items: center;
     }
 
 .header-container.light a:link,.header-container.light a:visited,.header-container.light a:hover,.header-container.light a:active {
@@ -74,6 +77,16 @@
     font-weight: 500;
 }
 
-.right-side{
-    gap: 5rem !important;
+
+
+@media screen and (max-width:1000px){
+  .contact-text{
+    display:none;
+  }
+  .info-text{
+    display:none;
+  }
+  .header-container.light, .header-container.dark{
+    border:none;
+  }
 }

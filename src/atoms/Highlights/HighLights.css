@@ -1,0 +1,65 @@
+.highlight-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  min-width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.highlight-card.dark {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.highlight-card.light {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-icon {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.highlight-title.dark {
+  color: #fff;
+}
+
+.highlight-title.light {
+  color: #111;
+}
+
+.highlight-description {
+  font-size: 0.875rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.highlight-description.dark {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.highlight-description.light {
+  color: rgba(0, 0, 0, 0.7);
+}

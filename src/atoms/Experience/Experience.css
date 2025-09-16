@@ -1,0 +1,133 @@
+.experience-container {
+  padding: 3rem 1rem;
+  text-align: center;
+  height:40vh;
+  min-height: fit-content;
+}
+
+.experience-title {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+.time-line {
+  position: relative;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* central horizontal line */
+.line {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: gray;
+  z-index: 1;
+}
+
+/* items aligned on the line */
+.timeline-item {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  z-index: 2;
+}
+
+.timeline-role {
+  display: inline-block;
+  position: relative;
+  top: -1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* hidden popup */
+.timeline-popup {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  text-align: left;
+}
+
+.timeline-popup h4 {
+  margin: 0 0 0.25rem 0;
+}
+
+.timeline-popup p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.timeline-popup ul {
+  padding-left: 1rem;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.timeline-item:hover .timeline-popup {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ---------- MOBILE LAYOUT ---------- */
+@media screen and (max-width: 1000px) {
+  .line {
+    display: none;
+  }
+
+  .time-line {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  ul{
+    width: 80vw;
+  }
+  .timeline-item {
+    flex: none;
+    width: 90%;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  .timeline-role {
+    position: static;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    cursor: default;
+  }
+
+  .timeline-popup {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: none;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+  }
+}

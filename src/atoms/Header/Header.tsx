@@ -24,15 +24,17 @@ export const Header = ({onChange} : HeaderProps) => {
       className={`header-container ${darkMode ? "dark" : "light"}`}
     >
         <div className="left-side">
-          <span>Eilay Levi</span>
-          <span>Full-Stack Developer</span>
+          <span className="info-text"><b>Eilay Levi</b></span>
+          <span className="info-text"><b>Full-Stack Developer</b></span>
           <div className="span-and-icon">
+            <a href="tel:+9720547632322">
             <Phone size={20} className='icon'/>
-            <a href="tel:+9720547632322"><span>+972 53-551-0999</span></a>
+                <span className="contact-text">+972 53-551-0999</span></a>
           </div>
           <div className="span-and-icon">
+            <a href="mailto:eilaylevi95@gmail.com">
             <Email size={20} className='icon'/>
-            <a href="mailto:eilaylevi95@gmail.com"><span>eilaylevi95@gmail.com</span></a>
+                <span className="contact-text">eilaylevi95@gmail.com</span></a>
           </div>
             </div>
         <div className="right-side">
