@@ -27,7 +27,7 @@ export const Header = ({onChange} : HeaderProps) => {
           <span className="info-text"><b>Eilay Levi</b></span>
           <span className="info-text"><b>Full-Stack Developer</b></span>
           <div className="span-and-icon">
-            <a href="tel:+9720547632322">
+            <a href="tel:+972535510999">
             <Phone size={20} className='icon'/>
                 <span className="contact-text">+972 53-551-0999</span></a>
           </div>
