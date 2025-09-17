@@ -132,4 +132,8 @@
     background: transparent;
     color: inherit;
   }
+
+  .timeline-popup ul {
+  font-size: 1.1rem;
+}
 }
