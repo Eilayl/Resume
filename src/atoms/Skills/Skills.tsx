@@ -14,8 +14,7 @@ export const Skills = (darkMode: {darkMode: boolean}) => {
               <div key={j}>
                 <div className="skill-row">
                   <span>
-                    {item.name}{" "}
-                    {item.note && <small>({item.note})</small>}
+                    {item.name}
                   </span>
                   <span>{item.level}%</span>
                 </div>

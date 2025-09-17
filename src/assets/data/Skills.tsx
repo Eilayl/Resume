@@ -2,39 +2,42 @@ import { SkillCategory, Language } from "../../types";
 
 export const skillsData: SkillCategory[] = [
   {
-    title: "Programming Languages",
+    title: "Core Development",
     items: [
-      { name: "Python", level: 100, note: "NumPy, Django" },
-      { name: "C#", level: 100 },
-      { name: "Java", level: 100 },
-      { name: "C", level: 100 },
+      { name: "React", level: 100 },
+      { name: "Node.js", level: 95 },
+      { name: "TypeScript & JavaScript (ES6+)", level: 100 },
+      { name: "Python (Django)", level: 80 },
     ],
   },
   {
     title: "Databases",
     items: [
-      { name: "SQL", level: 100, note: "MySQL, PostgreSQL" },
+      { name: "MongoDB", level: 100 },
+      { name: "SQL (SQLite)", level: 80 },
     ],
   },
   {
-    title: "AI Tools",
+    title: "QA & DevOps",
     items: [
-      { name: "Cursor", level: 100 },
-      { name: "base44", level: 100 },
+      { name: "Unit Testing", level: 80 },
+      { name: "Load Testing (Locust)", level: 80},
+      { name: "AWS (Lambada)", level: 60},
+      { name: "Ansible", level: 60},
     ],
   },
   {
-    title: "Data Analysis & Machine Learning",
+    title: "Soft Skills",
     items: [
-      { name: "Data Analysis", level: 100 },
-      { name: "Problem Solving", level: 100 },
-      { name: "Algorithm Optimization", level: 100 },
+      { name: "Team Leadership", level: 100 },
+      { name: "Communication", level: 100 },
+      { name: "Data-Driven Thinking", level: 90 },
     ],
   },
 ];
 
+
 export const languages: Language[] = [
   { name: "Hebrew", level: "Native" },
-  { name: "English", level: "Native" },
-  { name: "Spanish", level: "Basic" },
+  { name: "English", level: "Fluent" },
 ];

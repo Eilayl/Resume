@@ -1,5 +1,5 @@
 import './Experience.css'
-
+import { experiencesdata as experiences } from '../../assets/data/Experience'
 type ExperienceItem = {
   title: string
   role: string
@@ -9,10 +9,9 @@ type ExperienceItem = {
 
 type ExperienceProps = {
   darkMode: boolean
-  experiences: ExperienceItem[]
 }
 
-export const Experience = ({ darkMode, experiences }: ExperienceProps) => {
+export const Experience = ({ darkMode }: ExperienceProps) => {
   return (
     <div
       className="experience-container"
@@ -31,7 +30,7 @@ export const Experience = ({ darkMode, experiences }: ExperienceProps) => {
             <span className="timeline-role">{item.role}</span>
 
             <div className="timeline-popup">
-              <h4>{item.title}</h4>
+              <h2>{item.title}</h2>
               <p>{item.time}</p>
               <ul>
                 {item.highlights.map((h, idx) => (

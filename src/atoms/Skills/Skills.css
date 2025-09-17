@@ -3,8 +3,13 @@
   text-align: center;
   border-top:1px solid white;
   transition: all 0.3s ease;
+  border-bottom: 1px solid white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.skills-container h3{
+  font-size: 2rem;
+}
 .skills-container.dark span, .skills-container.dark h3 {
   color: black;
 }
@@ -44,7 +49,7 @@
 .skill-row {
   display: flex;
   justify-content: space-between;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
   margin: 0.3rem 0;
 }
 
@@ -74,7 +79,7 @@
 }
 
 .lang-item {
-  font-size: 0.9rem;
+  font-size: 1.6rem;
 }
 
 
