@@ -67,7 +67,7 @@
   text-align: left;
 }
 
-.timeline-popup h4 {
+.timeline-popup h2 {
   margin: 0 0 0.25rem 0;
 }
 
@@ -135,5 +135,9 @@
 
   .timeline-popup ul {
   font-size: 1.1rem;
+}
+
+.timeline-popup h2{
+  white-space: nowrap;
 }
 }

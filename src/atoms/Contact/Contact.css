@@ -29,6 +29,7 @@ form{
     justify-self: center;
     gap:1rem;
     padding-top: 3rem;    
+    margin: auto;
 }
 
 form input, form textarea{
@@ -74,4 +75,10 @@ form input::placeholder, form textarea::placeholder{
 .error{
     font-size: 1.5rem;
     color:red;
+}
+
+@media screen and (max-width: 1000px) {
+    form{
+        width:80vw;
+    } 
 }
