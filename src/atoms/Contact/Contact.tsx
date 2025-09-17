@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import './Contact.css'
 import axios, { AxiosError } from 'axios';
 import { FaRegPaperPlane } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 type ContactProps = {
     darkMode: boolean;
@@ -13,6 +14,7 @@ export const Contact = ({darkMode} : ContactProps) => {
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const[error, setError] = useState('');
+    const navigate = useNavigate();
 
     const SendMessage = async () => {
         try{
@@ -21,6 +23,7 @@ export const Contact = ({darkMode} : ContactProps) => {
             const response = await axios.post(`${URL}sendmsg`, {
                                 name, phone, email, subject, message
             }, {})
+            navigate('/bless')
         }
         catch(error)
         {
