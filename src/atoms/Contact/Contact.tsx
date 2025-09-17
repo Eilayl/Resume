@@ -18,7 +18,7 @@ export const Contact = ({darkMode} : ContactProps) => {
         try{
 
             const URL = process.env.REACT_APP_API_URL || 'http://localhost:8000'
-            const response = await axios.post(`${URL}/sendmsg`, {
+            const response = await axios.post(`${URL}sendmsg`, {
                                 name, phone, email, subject, message
             }, {})
         }
