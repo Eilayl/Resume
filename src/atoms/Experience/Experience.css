@@ -1,9 +1,9 @@
 .experience-container {
   padding: 1rem 1rem;
   text-align: center;
-  height:40vh;
+  height: 40vh;
   min-height: fit-content;
-  transition:all 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .experience-title {
@@ -45,7 +45,7 @@
   position: relative;
   top: -1.5rem;
   font-weight: 800;
-  font-size:1.7rem;
+  font-size: 1.7rem;
   cursor: pointer;
 }
 
@@ -100,9 +100,10 @@
     align-items: center;
   }
 
-  ul{
+  ul {
     width: 80vw;
   }
+
   .timeline-item {
     flex: none;
     width: 90%;
@@ -134,10 +135,12 @@
   }
 
   .timeline-popup ul {
-  font-size: 1.1rem;
-}
+    font-size: 1.1rem;
+  }
 
-.timeline-popup h2{
-  white-space: nowrap;
-}
+  .timeline-popup h2 {
+    font-size: 1.3rem;
+    width: 90vw;
+    max-width: 340px;
+  }
 }
